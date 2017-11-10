@@ -18,9 +18,10 @@ client.on('message', message => {
   }
 
   if(message.content.includes(':mendes:')){
-    message.member.voiceChannel.join().then( connection =>{
-      connection.playFile(espetaculo)
-    });
+    if(message.member.voiceChannel != null)
+      message.member.voiceChannel.join().then( connection =>{
+        connection.playFile(espetaculo)
+      });
   }
 });
 
