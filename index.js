@@ -13,7 +13,7 @@ client.on('message', message => {
       message.reply('pong')
       break
     case 'Qual':
-      message.reply(' o preço desta montra final EEEEEEEEE')
+      message.reply(' o preço desta montra final EEEEEEEEEE')
       break
   }
 
